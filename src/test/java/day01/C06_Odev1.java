@@ -1,3 +1,5 @@
+package day01;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -20,9 +22,9 @@ public class C06_Odev1 {
 
         System.setProperty("webdriver.chrome.driver","src/resources/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        driver.manage().window().maximize();  // driver - yönet -windows - tam ekran
 
-        driver.navigate().to("https://www.amazon.com/");
+        driver.get("https://www.amazon.com/");
         System.out.println(driver.getTitle());
 
         String arananKelime = "Amazon";
