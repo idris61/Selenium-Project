@@ -17,10 +17,11 @@ public class C05_findelements {
         driver.get("https://www.amazon.com");
 
         // Amazon sayfasındaki tag'ları link(a) olanların sayısını yazdırınız
-        List<WebElement> tag = driver.findElements(By.tagName("a"));
+        List<WebElement> tag = driver.findElements(By.tagName("input"));
         System.out.println("input tag'inin sayisi : " + tag.size());
 
         System.out.println(driver.findElement(By.xpath("(//*[@class='a-color-base headline truncate-2line'])[1]")).getText());
+
 
     }
 }
