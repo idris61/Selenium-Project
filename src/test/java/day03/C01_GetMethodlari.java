@@ -58,6 +58,10 @@ public class C01_GetMethodlari {
         TAGNAME   ---> Her webelementin ilk siradaki ismidir ÖRNEK =INPUT
         ATRIBUTE ISE --->  id   ----value name --  dir --class--
         bunlarin icinde olanlar ise   atribute degerleridir .
+
+        WebElementIsmi.getTagName() ---> daha önce locate ettiğimiz bir webelementin tagName'ini döndürür.
+        WebElementIsmi.getAttribute(attributeIsmi) ---> daha önce locate ettiğimiz bir webelementin istediğimiz
+                                                        attribute'unun değerini döndürür.
          */
     }
 }

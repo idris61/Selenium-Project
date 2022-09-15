@@ -102,11 +102,24 @@ public class C08_Odev3 {
             System.out.println("Linkler : " + each.getText());
         }
 
+        /*
+        NOT : Listemiz WebElement'lerden oluştuğu için, direk yazdırırsak referansları yazdırır..
+        For each loop yapip her bir link WebElement'inin üzerindeki yazıyı yazdırmalıyız.
+         */
+
         // 9- linkleri LAMBDA ile yazdıralım
         linklerListesi.forEach(t-> System.out.println(t.getText()));
 
         // 10- sayfayı kapatalım
         driver.close();
+
+
+
+        /*
+        NOT : *** implicitlyWait yazmazsak sistem sağlıklı çalışmaz.
+              *** 1- Web sayfası açıldığında load (yükleme) için bekliyor.
+              *** 2- Locate'ler için bekliyor. Bunun için her class başında mutlaka yazalım.
+         */
 
 
 

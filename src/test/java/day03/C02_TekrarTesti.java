@@ -37,14 +37,15 @@ public class C02_TekrarTesti {
        // c. Amazon'da görüntülenen ilgili sonuçların sayısını yazdırın
         List<WebElement> aramaSonucu = driver.findElements(By.className("sg-col-inner"));
         String sonucYazisi = aramaSonucu.get(0).getText();
-        System.out.println(sonucYazisi);
+                            // get(0).getText(); ==> WebElement'in ilkini ve yazısını getir dedik.
+        System.out.println(sonucYazisi); // 1-16 of 109 results for "city bike"
 
         // d. Sadece sonuç sayısını yazdırın
         String [] sonucYazisiE = sonucYazisi.split(" ");
-        System.out.println("City Bike arama sonucu : " + sonucYazisiE[2]);
+        System.out.println("City Bike arama sonucu : " + sonucYazisiE[2]); // City Bike arama sonucu : 109
 
         // Sonuç sayısını LAMBda ile yazdırın
-        Arrays.stream(sonucYazisi.split(" ")).limit(3).skip(2).forEach(System.out::println);
+        Arrays.stream(sonucYazisi.split(" ")).limit(3).skip(2).forEach(System.out::println); // 109
 
         // e. Sonra karşınıza çıkan ilk sonucun resmine tıklayın
         List<WebElement> ilkResim = driver.findElements(By.className("s-image"));
