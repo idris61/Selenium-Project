@@ -26,9 +26,13 @@ public class C02_RelativeLocators {
         BerlinWE.click();
         Thread.sleep(3000);
         driver.close();
-
-
-
-
     }
 }
+
+        /*
+        above()     –-> sabit bir öğenin üzerinde bulunan bir öğeyi veya öğeleri bulur
+        below()     –-> sabit bir öğenin altında bulunan bir öğeyi veya öğeleri bulur
+        near()      –-> sabit bir öğenin yakınında bulunan bir öğeyi veya öğeleri bulur
+        toLeftOf()  –-> sabit bir öğenin solunda bulunan bir öğeyi veya öğeleri bulur
+        toRightOf() –-> sabit bir öğenin sağında bulunan bir öğeyi veya öğeleri bulur
+         */

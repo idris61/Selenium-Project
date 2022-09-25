@@ -76,6 +76,18 @@ public class C00_Xpath_CssSelector_RelativeLocators_NOT {
 
       WebElement berlin = driver.findElement(with(By.tagName("li")).above(sailor).toRightOf(boston));
       WebElement mountie = driver.findElement(with(By.className("ui-li-has-thub")).below(boston));
+
+      WebElement BerlinWE = driver.findElement(RelativeLocator.with(By.tagName("img")).
+                                                                below(NYCWE).
+                                                                toLeftOf(BayAreaWE).
+                                                                toRightOf(BostonWE));
+
+        above()     –-> sabit bir öğenin üzerinde bulunan bir öğeyi veya öğeleri bulur
+        below()     –-> sabit bir öğenin altında bulunan bir öğeyi veya öğeleri bulur
+        near()      –-> sabit bir öğenin yakınında bulunan bir öğeyi veya öğeleri bulur
+        toLeftOf()  –-> sabit bir öğenin solunda bulunan bir öğeyi veya öğeleri bulur
+        toRightOf() –-> sabit bir öğenin sağında bulunan bir öğeyi veya öğeleri bulur
+
      */
 
 
