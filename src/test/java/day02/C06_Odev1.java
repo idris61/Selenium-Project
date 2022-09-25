@@ -75,7 +75,6 @@ public class C06_Odev1 {
         // 7- Sayfayi tam sayfa (maximize) yapin
         driver.manage().window().maximize();
 
-
         // 8- Browser’i kapatin
         driver.close();
 

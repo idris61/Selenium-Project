@@ -88,8 +88,8 @@ public class C08_Odev3 {
         }else System.out.println("adresses testi failed");
 
         if (singoutElementi.isDisplayed()){
-            System.out.println("adresses testi passed");
-        }else System.out.println("adresses testi failed");
+            System.out.println("singout testi passed");
+        }else System.out.println("singout testi failed");
 
         //7- Sayfada kac tane link oldugunu bulun
         List<WebElement> linklerListesi = driver.findElements(By.tagName("a"));

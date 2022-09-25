@@ -1,7 +1,8 @@
 package day02;
 
-public class C00_Not_Locators {
+public class C00_Not_Locators_WebElementMethodlari {
     public static void main(String[] args) {
+
         /*
     Locator (konum belirleyici) : bir web sitesindeki herhangi bir webElementi driver’a tarif etme yontemidir.
 
@@ -63,6 +64,8 @@ public class C00_Not_Locators {
         - Class attribute’nun degeri bosluk iceriyorsa, By.classname( ) ile yapilan locator’lar saglikli calismayabilir.
 
     4- tagname  : Tag isimleri genelde ayni oldugundan unique degere ulasmak zordur.
+            Çoğunlukla öğelerin bir listesini almak için kullanılır. Bu nedenle findElements() yöntemiyle kullanılmasıönerilir.
+            Örneğin, kullandığımız bir sayfadaki tüm linkleri döndürmek için By.tagName(“a") kullanilabilir
 
     5- linkText : Kullanacagimiz webElement bir link ise uzerindeki yazinin tamamini kullanarak locate edebiliriz.
 
@@ -90,70 +93,52 @@ public class C00_Not_Locators {
             WebElement aramaKutusu = driver.findElement(By.cssSelector ("#twotabsearchtextbox’]"));
                                      driver.findElement(By.cssSelector (".nav-input nav-progressive-attribute]"));
 
+    NOT :   findElement( )Method ;
 
+            WebElement elementName = driver.findElement(By.LocatorStrategy("LocatorValue"));
 
+            ❖ Driver’in bir elementi bulmasi için findElement( ) yönteminikullanırız.
+            ❖ Bu, tek bir web elementini döndürür.
+            ❖ Driver elementi bulamazsa, runtime exception VERİR :NoSuchElementException.
+            ❖ NoSuchElementException'ı gördüğünüzde, locatorı tekrar kontrol etmelisiniz.
 
+            findElements( )Method ;
 
+            List<WebElement>elementName = driver.findElements(By.LocatorStrategy("LocatorValue"));
 
+            ❖ Locator degerine uygun Web elementlerinin listesini döndürür
+            ❖ Locator stratejisiyle eşleşen web elementi yoksa boş bir liste döndürür.
+            ❖ NoSuchElementException hatası VERMEZ.
+            ❖ Listedeki her Web elementi, 0'dan başlayan bir indeks alır.,
+  //------------------------------------------------------------------------------------------------------------------//
 
+                        //-/-/      WebElementMethod’lari      /-/-/
+                        --------------------------------------------
+        webElement.click();                         ==> Web Element’e click yapar
+        webElement.sendKeys(“Metin” );              ==> Parametre olarak yazilan metni Web Elemente gonderir
+        webElement.submit();                        ==> Web element ile islem yaparken Enter tusuna basma gorevi yapar
+        webElement.sendKeys(“Metin” + Keys.ENTER ); ==> Istedigimiz metni yollayip, sonra ENTER’abasar.
 
+        NOT : Bir webelementin üzerindeki yazıyı konsolda yazdırabilmek için getText methodu kullanılır.
 
+        WebElement GetMethod’lari;
+        --------------------------
+        webElement.getText();                   ==> Web Element uzerindeki yaziyi getirir
+        webElement.getAttribute(“Att.ismi” );   ==> Ismi girilen attribute’un degerini getirir
+        webElement.getTagName();                ==> Web elementin tag ismini getirir
 
+        WebElement IsMethod’lari;
+        ------------------------
+        webElement.isEnable();              ==> Web Element erisilebilir ise true yoksa false doner
+        webElement.isDisplayed();           ==> Web Element gorunur ise true yoksa false doner
+        webElement.isSelected( );           ==> Web Element secili ise true yoksa false doner
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        Not : Web element ile ilgili bu method’larin disinda size, istenen CSS ozelligi, Location,
+              Rect.geometrik ozellikler, DOM degeri vb.. Bir cok method vardir ama Automation Test icin kullanmiyoruz
 
 
 
          */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

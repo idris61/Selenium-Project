@@ -30,8 +30,8 @@ public class C00_Not_DriverMethodlari {
      En ilkel haliyle bir otomasyon yapmak icin;
      Class'imiza otomasyon icin gerekli olan webdriver'in yerini gostermemiz gerekir
      bunun icin Java kutuphanesinden System.setProperty() methodu kullaniriz, method 2 parametre istemektedir
-     ilki kullanacagimiz driver : webdriver.chrome.driver
-     ikincisi ise bu driverin fiziki yolu : "src/resources/drivers/chromedriver.exe"
+      -- ilki kullanacagimiz driver : webdriver.chrome.driver
+      -- ikincisi ise bu driverin fiziki yolu : "src/resources/drivers/chromedriver.exe"
   */
     public static void main(String[] args) throws InterruptedException {
 
